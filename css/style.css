@@ -610,9 +610,11 @@ footer {
 
 .blog-post-hero figcaption,
 .post-gallery figcaption {
-  margin-top: 0.75rem;
+  padding: 0.75rem 0.5rem 0.25rem;
   color: var(--muted);
   font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 
@@ -718,14 +720,16 @@ footer {
 }
 
 .post-gallery-portrait img {
-  display: block;
   float: left;
-  width: 50%;
-  height: 400px;
-  object-fit: contain;
-  padding: 10px;
+  width: 42%;
+  margin: 0 2rem 1.5rem 0;
+  padding: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 
 }
+
 .post-gallery figure:first-child img {
   height: 420px;
 }
@@ -789,12 +793,12 @@ footer {
   .post-gallery figure:first-child img {
     height: 260px;
   }
+
   .post-gallery-portrait img {
-    height: auto;
-    max-height: 400px;
     float: none;
     width: 100%;
     margin: 2rem 0;
+    max-width: 500px;
   }
 }
 
