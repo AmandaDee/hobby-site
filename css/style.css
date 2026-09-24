@@ -719,21 +719,29 @@ footer {
   border-radius: 8px;
 }
 
-.post-gallery-portrait img {
-  float: left;
-  width: 42%;
-  margin: 0 2rem 1.5rem 0;
-  padding: 0.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
 
-}
 
 .post-gallery figure:first-child img {
   height: 420px;
 }
 
+.post-gallery-portrait {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.post-gallery-portrait img {
+  width: 100%;
+  height: auto;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  object-fit: contain;
+}
 
 /* Blog navigation */
 
