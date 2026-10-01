@@ -956,3 +956,41 @@ footer {
   }
 
 }
+
+/* Las Vegas trip photos: preserve the complete image at every screen size. */
+.trip-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.trip-photo-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+.trip-photo-gallery figure:only-child {
+  grid-column: 1 / -1;
+}
+.trip-photo-gallery img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.trip-photo-gallery figcaption {
+  padding: 0.75rem 0.5rem 0.25rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .trip-photo-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
