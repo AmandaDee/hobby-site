@@ -1,0 +1,17 @@
+{
+  "name": "amanda-bamford-hobby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amanda Bamford's personal portfolio and making journal",
+  "scripts": {
+    "start": "npm run build && node scripts/serve.js",
+    "build": "node scripts/build.js",
+    "test": "node --test",
+    "check": "node --check content/projects.js && node --check scripts/build.js && node --check scripts/render-projects.js && node --check scripts/serve.js",
+    "deploy": "npm run build && npx --yes wrangler deploy --config wrangler.workers.json",
+    "deploy:pages": "npm run build && npx --yes wrangler pages deploy ./dist"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

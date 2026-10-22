@@ -1,6 +1,7 @@
 # Personal Hobby Site
 
-My personal portfolio and website, built to showcase my experience, projects and the things I enjoy making outside of work.
+My personal portfolio and website, built to showcase my experience, projects and the things I enjoy making outside of
+work.
 
 ## Built with
 
