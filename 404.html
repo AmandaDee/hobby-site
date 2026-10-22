@@ -1,62 +1,46 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
+  <meta content="#080b12" name="theme-color">
+  <meta content="This page could not be found. Return to Amanda Bamford's portfolio." name="description">
+  <title>Page not found | Amanda Bamford</title>
+  <link href="/css/shared.css?v=310c02fe8df2" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
 </head>
-
 <body>
-<h1>Page Not Found</h1>
-<p>Sorry, but the page you were trying to view does not exist.</p>
+<!-- site:header -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <nav aria-label="Main navigation" class="navbar">
+    <a aria-label="Amanda Bamford — home" class="logo" href="/index.html#home">AB<span aria-hidden="true">.</span></a>
+    <ul class="nav-links">
+      <li><a href="/index.html#about">About</a></li>
+      <li><a href="/index.html#projects">Projects</a></li>
+      <li><a href="/index.html#hobbies">Hobbies</a></li>
+    </ul>
+    <a class="nav-button" href="/assets/cv.pdf" rel="noopener noreferrer" target="_blank">Download CV</a>
+  </nav>
+</header>
+<!-- /site:header -->
+<main class="error-page" id="main-content">
+  <p class="eyebrow">404 · A WRONG TURN</p>
+  <h1>This page has <span>wandered off.</span></h1>
+  <p>The link may have changed, or the page may no longer be here. You can head back to my projects and find something
+    else to explore.</p>
+  <a class="button button-primary" href="/index.html#projects">Back to projects <span aria-hidden="true">→</span></a>
+</main>
+<!-- site:footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Amanda Bamford.</p>
+    <p>Built with HTML5, CSS3 &amp; JavaScript.</p>
+  </div>
+</footer>
+<!-- /site:footer -->
 </body>
-
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
